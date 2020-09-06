@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- ... appender config, up to you ... -->
+    </appender>
+
+    <!-- Set Exposed logger on INFO level  -->
+    <logger name="Exposed" level="info" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!-- Set root logger on another level  -->
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
