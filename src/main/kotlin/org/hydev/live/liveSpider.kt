@@ -60,4 +60,6 @@ fun main() {
             }
         }
     }
+
+    fixedThreadPool.shutdown()
 }
